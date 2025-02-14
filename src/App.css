@@ -4,6 +4,7 @@
     background-size: cover;
     background-position: center;
     border: 3px solid red;
+    overflow: scroll;
 }
 
 .App div {}
