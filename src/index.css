@@ -13,7 +13,7 @@
 }
 
 body{
-  height: 100dvh;
+  
   font-size: var(--font-size);
   font-family: "Poppins", serif;
   color: var(--font-color);
