@@ -156,14 +156,10 @@ body {
 }
 
 .intro .image {
-  height: 250px;
-  width: 100%;
-  background-color: green;
-  background: url('./assets/images/author3.JPG');
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   position: relative;
+}
+.intro .image .author-image{
+  width: 100%;
 }
 
 .intro .image .element {

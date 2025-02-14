@@ -1,10 +1,16 @@
 import React from 'react'
+import imgURL from '../assets/images/author2.jpg'
+
+const IMAGES = {
+  image1 : new URL('../assets/images/author2.jpg',import.meta.url).href
+}
 
 const Intro = () => {
   return (
     <div className='intro'>
 
       <div className='image'>
+        <img className='author-image' src={IMAGES.image1} />
         
         <div className="element"></div>
       </div>
