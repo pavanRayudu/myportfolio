@@ -7,9 +7,8 @@
 }
 
 html {
-  height: -webkit-fill-available;
-  height: -moz-available;
-  height: stretch;
+  scroll-behavior: smooth;
+  text-select: none;
 }
 
 :root {
@@ -27,6 +26,12 @@ body {
   font-family: "Poppins", serif;
   color: var(--font-color);
   background-color: var(--background-color);
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    display: none;
+  }
 }
 
 

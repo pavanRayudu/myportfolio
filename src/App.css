@@ -1,12 +1,9 @@
 .App {
-    
-    background-size: cover;
-    background-position: center;
-    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 }
-
-.App div {}
-
 
 .intro {
     position: relative;
@@ -66,11 +63,13 @@
     grid-template-columns: auto auto;
     gap: 0.5rem;
 }
-.link-5{
+
+.link-5 {
     grid-column-start: 1;
     grid-column-end: 3;
 }
-.links ul li{
+
+.links ul li {
     background-color: rgb(63, 63, 63);
     padding-block: 0.5rem;
     border-radius: 8px;
