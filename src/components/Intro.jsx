@@ -1,7 +1,7 @@
 import React from 'react'
 
 const IMAGES = {
-  image1 : new URL('../assets/images/author2.jpg',import.meta.url).href
+  image1 : new URL('../assets/images/author2.JPG',import.meta.url).href
 }
 
 const Intro = () => {
