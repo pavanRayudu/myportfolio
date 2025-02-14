@@ -1,5 +1,4 @@
 import React from 'react'
-import imgURL from '../assets/images/author2.jpg'
 
 const IMAGES = {
   image1 : new URL('../assets/images/author2.jpg',import.meta.url).href
