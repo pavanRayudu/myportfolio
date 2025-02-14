@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  height: -webkit-fill-available;
+}
 :root{
   --font-size:18px;
   --font-color: rgb(231, 231, 231);
@@ -13,7 +16,7 @@
 }
 
 body{
-  
+  height: -webkit-fill-available;
   font-size: var(--font-size);
   font-family: "Poppins", serif;
   color: var(--font-color);
