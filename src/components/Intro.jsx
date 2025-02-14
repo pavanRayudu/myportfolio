@@ -5,6 +5,7 @@ const Intro = () => {
     <div className='intro'>
 
       <div className='image'>
+        
         <div className="element"></div>
       </div>
       <div className="content">
