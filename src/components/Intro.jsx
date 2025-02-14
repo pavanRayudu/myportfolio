@@ -21,7 +21,7 @@ const Intro = () => {
           <li className="link link-2">Education</li>
           <li className="link link-3">Experience</li>
           <li className="link link-4">Interests</li>
-          <li className="link link-5">Contact</li>
+          <li className="link link-5">Contacts</li>
         </ul>
       </div>
 
