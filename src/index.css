@@ -19,8 +19,6 @@ html {
 }
 
 body {
-  height: -webkit-fill-available;
-  height: -moz-available;
   height: stretch;
   font-size: var(--font-size);
   font-family: "Poppins", serif;
