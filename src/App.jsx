@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import './App.css'
 
 // Importing the section of the page from components folder
 import Intro from './components/Intro'
