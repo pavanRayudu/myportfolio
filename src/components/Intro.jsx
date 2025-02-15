@@ -4,11 +4,7 @@ import { Link } from 'react-router-dom'
 import Skills from './Skills'
 
 const IMAGES = {
-<<<<<<< HEAD
   image1 : new URL('../assets/images/author2.JPG',import.meta.url).href
-=======
-  image1: new URL('../assets/images/author2.jpg', import.meta.url).href
->>>>>>> f72a45c (changes made)
 }
 
 const Intro = ({ setVisible }) => {

@@ -146,7 +146,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 100dvh;
-  border: 2px solid red;
   position: relative;
 }
 
@@ -169,13 +168,8 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
-  background: linear-gradient(transparent, var(--background-color));
-  bottom:0px;
-=======
   background: linear-gradient(transparent 20%, var(--background-color) 90%);
   bottom: -2px;
->>>>>>> f72a45c (changes made)
 }
 
 
