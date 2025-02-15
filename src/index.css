@@ -11,6 +11,7 @@ html {
   text-select: none;
 }
 
+
 :root {
   --font-size: 18px;
   --font-color: rgb(231, 231, 231);
@@ -146,27 +147,35 @@ body {
   flex-direction: column;
   height: 100dvh;
   border: 2px solid red;
+  position: relative;
 }
 
 .intro {
+  /* padding-block: 1rem; */
   position: relative;
   text-align: center;
-
 }
 
 .intro .image {
   position: relative;
 }
-.intro .image .author-image{
-  width: 100%;
+
+.intro .image .author-image {
+  max-width: 100%;
+  /* border-radius: 50px 50px 0px 0px; */
 }
 
 .intro .image .element {
   position: absolute;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   background: linear-gradient(transparent, var(--background-color));
   bottom:0px;
+=======
+  background: linear-gradient(transparent 20%, var(--background-color) 90%);
+  bottom: -2px;
+>>>>>>> f72a45c (changes made)
 }
 
 
@@ -185,21 +194,23 @@ body {
 }
 
 .intro .content .introduction {
-  padding-bottom: 2rem;
-  border-bottom: 2px solid rgb(103, 86, 86);
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid rgb(101, 101, 101);
 
 
 }
 
 .links {
   margin-inline: 1rem;
-  padding-block: 1rem;
+  padding-block: 1.5rem;
 }
 
 .links ul {
   list-style: none;
-  display: grid;
   grid-template-columns: auto auto;
+  display: grid;
+  flex-wrap: wrap;
+  text-align: center;
   gap: 0.5rem;
 }
 
@@ -209,8 +220,65 @@ body {
 }
 
 .links ul li {
+  cursor: pointer;
+  font-size: calc(0.8 * var(--font-size));
   background-color: rgb(63, 63, 63);
   padding-block: 0.5rem;
   border-radius: 8px;
   cursor: pointer;
+  width: 100%;
+  color: var(--font-color);
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+
+.nav-link {
+  width: 100%;
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.skills {
+  padding: 1rem;
+  width: 100%;
+  /* background-color: rgb(36, 36, 36); */
+}
+
+#home-link {
+  background: none;
+  font-size: var(--font-size);
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  border: none;
+  font-weight: 700;
+  color: var(--font-color);
+}
+
+.skills h1 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.skills .skill-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-block: 1rem;
+
+}
+
+.technical h2 {
+  margin-bottom: 0.8rem;
+  color: var(--primary-color);
+}
+
+.technical ul {
+  padding-inline: 1.5rem 0;
+}
+
+.skills h1 {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(138, 138, 138);
 }

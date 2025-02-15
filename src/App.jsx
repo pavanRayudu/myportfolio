@@ -6,19 +6,16 @@ import Experience from './components/Experience'
 import Education from './components/Education'
 import Interests from './components/Interests'
 import Contact from './components/Contact'
+import { useState } from 'react';
+import { motion } from "framer-motion"
 // ................
 
 function App() {
-  return(
+  return (
     <div className='App'>
-      <Intro />
-      {/* <Skills />
-      <Experience />
-      <Education/>
-      <Interests />
-      <Contact /> */}
+      <Intro  />
     </div>
-  ) 
+  )
 }
 
 export default App
