@@ -153,6 +153,11 @@ body {
   /* padding-block: 1rem; */
   position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .intro .image {
@@ -195,17 +200,21 @@ body {
 }
 
 .links {
-  margin-inline: 1rem;
-  padding-block: 1.5rem;
+  margin-inline: 0rem;
+  padding-block: 1rem;
 }
 
 .links ul {
-  list-style: none;
+  /* list-style: none; */
   grid-template-columns: auto auto;
-  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   text-align: center;
   gap: 0.5rem;
+  list-style: none;
+  padding-inline: 1rem;
 }
 
 .link-5 {

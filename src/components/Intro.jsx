@@ -22,7 +22,7 @@ const Intro = ({ setVisible }) => {
     >
 
       <div className='image'>
-        <img className='author-image' src={IMAGES.image1} />
+        {/* <img className='author-image' src={IMAGES.image1} /> */}
 
         <div className="element"></div>
       </div>
