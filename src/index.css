@@ -150,6 +150,9 @@ body {
 }
 
 .intro {
+  background: url('./assets/images/author4.jpg');
+  background-position: center;
+  background-size: cover;
   /* padding-block: 1rem; */
   position: relative;
   text-align: center;
@@ -160,25 +163,38 @@ body {
   height: 100%;
 }
 
-.intro .image {
-  position: relative;
-}
-
 .intro .image .author-image {
   max-width: 100%;
   /* border-radius: 50px 50px 0px 0px; */
 }
 
-.intro .image .element {
+.intro .element {
   position: absolute;
+  z-index: 0;
+  background-color: red;
   width: 100%;
   height: 100%;
-  background: linear-gradient(transparent 20%, var(--background-color) 90%);
-  bottom: -2px;
+  background-color: black;
+  opacity: 1;
+  background: linear-gradient(var(--background-color), transparent, var(--background-color));
+}
+
+.intro .element-2 {
+  position: absolute;
+  z-index: 0;
+  background-color: var(--background-color);
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+
+.intro section {
+  position: absolute;
+  /* bottom: 0; */
 }
 
 
-.intro .content {
+.intro section .content {
   /* background-color: red; */
   margin-inline: 1rem;
   display: flex;
@@ -186,14 +202,17 @@ body {
   gap: 1rem;
 
 }
+.intro section .content h1{
+  font-size: 2.5rem;
+}
 
-.intro .content h1 span {
+.intro section .content h1 span {
   color: var(--primary-color);
 
 }
 
-.intro .content .introduction {
-  padding-bottom: 1.5rem;
+.intro section .content .introduction {
+  padding-bottom: 1rem;
   border-bottom: 2px solid rgb(101, 101, 101);
 
 
@@ -299,7 +318,7 @@ body {
 }
 
 .education .edu_details .edu .degree {
-  
+
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-color);
