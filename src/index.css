@@ -248,11 +248,16 @@ body {
   border: none;
   font-weight: 700;
   color: var(--font-color);
+  text-decoration: underline;
+  opacity: 0.5;
 }
 
-.skills h1 {
-  text-align: center;
+.skills h1,
+.education h1 {
+  text-align: left;
   margin-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(138, 138, 138);
 }
 
 .skills .skill-section {
@@ -260,7 +265,6 @@ body {
   flex-direction: column;
   gap: 1.5rem;
   padding-block: 1rem;
-
 }
 
 .technical h2 {
@@ -272,7 +276,33 @@ body {
   padding-inline: 1.5rem 0;
 }
 
-.skills h1 {
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgb(138, 138, 138);
+.skills h1 {}
+
+.education {
+  padding: 1rem;
+}
+
+.education .edu_details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+
+.education .edu_details .edu .degree {
+  
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.education .edu_details .edu .institution_name {
+  font-style: italic;
+  font-weight: 200;
+}
+
+.degree_highlights {
+  margin-inline: 1rem;
+  padding-block: 1rem;
+  list-style-type: circle;
 }
