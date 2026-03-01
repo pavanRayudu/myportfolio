@@ -21,7 +21,7 @@ const Education = () => {
           <p className="institution_name">Rajiv Gandhi University of Knowledge Technologies, Nuzvid</p>
           <p className="duration">2018 - 2022</p>
           <ul className="degree_highlights">
-            <li>Course name: Civil Engineering</li>
+            <li>Course: Civil Engineering</li>
             <li>passed with distinction CGPA of 8.6</li>
             <li>Participated in various webinars and worshops related to civil field</li>
           </ul>
@@ -31,14 +31,14 @@ const Education = () => {
           <p className="institution_name">Rajiv Gandhi University of Knowledge Technologies, Nuzvid</p>
           <p className="duration">2016 - 2018</p>
           <ul className="degree_highlights">
-            <li>Course name: MPC</li>
+            <li>Course: MPC with IT</li>
             <li>passed with CGPA of 8.0</li>
           </ul>
         </div>
         <div className="edu edu_2">
           <p className="degree">High School</p>
           <p className="institution_name">Jawahar Navodaya Vidyalaya, Yanam</p>
-          <p className="duration">2011 - 2016</p>
+          <p className="duration">2015 - 2016</p>
           <ul className="degree_highlights">
             <li>Participated in Chess Compititions</li>
             
