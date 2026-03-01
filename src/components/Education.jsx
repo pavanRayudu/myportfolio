@@ -36,7 +36,7 @@ const Education = () => {
           </ul>
         </div>
         <div className="edu edu_2">
-          <p className="degree">High School</p>
+          <p className="degree">Class -X (CBSE Board)</p>
           <p className="institution_name">Jawahar Navodaya Vidyalaya, Yanam</p>
           <p className="duration">2015 - 2016</p>
           <ul className="degree_highlights">
