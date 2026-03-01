@@ -147,15 +147,14 @@ body {
   flex-direction: column;
   height: 100dvh;
   position: relative;
-  scroll-behavior: no-scr;
+  /* scroll-behavior: no-scr; */
 }
 
 .intro {
-  background: url('./assets/author.jpg');
+  background: url('./assets/chess board.jpg');
   background-position: center;
   background-size: cover;
-  /* padding-block: 1rem; */
-  position: relative;
+ 
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -171,12 +170,16 @@ body {
 
 .intro .image .author-image {
   max-width: 100%;
+  
 }
+
+
+
+
 
 .intro .element {
   position: absolute;
   z-index: 0;
-  background-color: red;
   width: 100%;
   height: 100%;
   background-color: black;

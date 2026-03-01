@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { motion } from "framer-motion"
 import { Link } from 'react-router-dom'
 import Skills from './Skills'
+import author from '../assets/author.jpg'
 
 const IMAGES = {
   image1: new URL('../assets/images/author2.JPG', import.meta.url).href
@@ -23,6 +24,9 @@ const Intro = ({ setVisible }) => {
       <div className="element"></div>
       <div className="element-2"></div>
       <section>
+        <div className='author_image'>
+          {/* <img src={author} alt="Company Logo" /> */}
+        </div>
         <div className="content">
           <h1>Hello, I'm <span >Pavan</span></h1>
           <p className='poppins-regular-italic'>SAP SD Functional Consultant</p>
