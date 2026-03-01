@@ -364,7 +364,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 3rem;
+  padding-block: 1.5rem;
+  gap: 2rem;
 
 }
 
