@@ -40,7 +40,7 @@ const Education = () => {
           <p className="institution_name">Jawahar Navodaya Vidyalaya, Yanam</p>
           <p className="duration">2015 - 2016</p>
           <ul className="degree_highlights">
-            <li>Completed in 2016 with 9.2 CGPA</li>
+            <li>Completed in 2016 with 10 CGPA</li>
             
           </ul>
         </div>
