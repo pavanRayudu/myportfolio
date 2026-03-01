@@ -24,7 +24,7 @@ const Intro = ({ setVisible }) => {
       <div className="element-2"></div>
       <section>
         <div className="content">
-          <h1>Hello, I'm <span>Pavan</span></h1>
+          <h1>Hello, I'm <span >Pavan</span></h1>
           <p className='poppins-regular-italic'>SAP SD Functional Consultant</p>
           <p className="address">Based in Hyderabad, Telangana- India</p>
           <p className='introduction'>
