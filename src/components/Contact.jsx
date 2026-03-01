@@ -66,7 +66,7 @@ const Contact = () => {
                 <textarea placeholder="Have a suggestion? Let me know..." required name="message"
                   id="message"></textarea>
               </div>
-              <button type="submit">Submit</button>
+              <button type="submit" disabled >Submit</button>
 
             </form>
           </section>
