@@ -38,19 +38,16 @@ const Intro = ({ setVisible }) => {
 
             <Link to='/skills' className='nav-link'>Core Expertise</Link>
             <Link to='/experience' className='nav-link'>Professional Experience</Link>
-
             <Link to='education' className='nav-link'>Education</Link>
-
-            
-
             <Link to='interests' className='nav-link'>Interests</Link>
-
             <Link to='contact' className='nav-link link-5'>Connect with me</Link>
-
           </ul>
         </div >
 
       </section >
+      {/* <div className='footer'>
+        <p>Crafted with Love</p>
+      </div> */}
 
 
 

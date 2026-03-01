@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import { IoHomeSharp } from "react-icons/io5";
 import { motion, AnimatePresence, easeIn, easeInOut, easeOut } from 'framer-motion';
 
 const Skills = ({ visible, setVisible }) => {
@@ -15,7 +16,7 @@ const Skills = ({ visible, setVisible }) => {
       <motion.button
 
         id='home-link' onClick={() => navigate('/')}>
-        <FaArrowLeft /><p>Home</p>
+        <IoHomeSharp /><p>Home</p>
       </motion.button>
 
       <motion.h1
@@ -26,7 +27,7 @@ const Skills = ({ visible, setVisible }) => {
             ease: easeOut
           }
         }}
-      >Skills</motion.h1>
+      >Core Expertise</motion.h1>
       {/* <hr className='divider'/> */}
       <div className='skill-section'>
         <div className='technical technical-sap'>
@@ -41,7 +42,7 @@ const Skills = ({ visible, setVisible }) => {
             }}
 
 
-          >SAP</motion.h2>
+          >SAP SD on S/4 HANA</motion.h2>
           <motion.ul
             initial={{ x: 500 }}
             animate={{
@@ -51,14 +52,22 @@ const Skills = ({ visible, setVisible }) => {
                 ease: easeInOut
               }
             }}>
-            <li>Good understanding on SAP ECC and S/4 Systems</li>
-            <li>Handsome exposure to SD Processes and Configurations</li>
-            <li>Knowldge on Idocs</li>
-            <li>Preparing the Functional specifications and Documentations </li>
+            <li>Good understanding and Hands-on exposure to SAP ECC and S/4 Systems</li>
+            <li>SAP S/4HANA Implementation & Rollout</li>
+            <li>Pricing and Billing Configuration</li>
+            <li>Order-to-Cash (OTC) Process</li>
+            <li>Implementation of SD Business Processes and Configurations</li>
+            <li>IDoc Monitoring and Error Handling</li>
+            <li>Implementing Special Business scenarios in SD</li>
+            <li>Functional Specification (FS) preparation for developments and enhancements </li>
             <li>Creating testcases for business scenarios</li>
             <li>Functional testing and UAT Support</li>
+            <li>Master data management</li>
+            <li>Output Management</li>
             <li>Good Understanding on Pricing, output, text, partner determinations </li>
-            <li>Understanding on Abap programming, DDIC tables, Reports etc</li>
+            <li>Unit Testing, Integration Testing, and UAT Support</li>
+            <li>Integration of SD with MM and FI in S/4HANA</li>
+            <li>Cut over activities and Go-Live support</li>
           </motion.ul>
         </div>
         <div className='technical technical-ui'>
@@ -84,7 +93,7 @@ const Skills = ({ visible, setVisible }) => {
               }
             }}>
             <li>Mobile friendly UI design using Figma</li>
-            <li>Expertise in HTML, CSS, JavaScript</li>
+            <li>Expertise in HTML5, CSS, JavaScript</li>
             <li>SPA using React</li>
             <li>MongoDB, Firebase, MySQL databases </li>
             <li>GitHUB</li>
