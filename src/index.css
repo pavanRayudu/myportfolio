@@ -354,6 +354,14 @@ body {
 .rolesres_title {
   margin-top: 1rem;
 }
+.contact_details{
+  /* background-color: red; */
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
 
 
 .contact-section {
