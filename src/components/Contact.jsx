@@ -14,27 +14,6 @@ const Contact = () => {
       </button>
       {/* <h1>Contact Me</h1> */}
       <div className="contact_details">
-        <div className="contact_form">
-          <section class="contact-section" id="contact">
-            <form action="" id="contactForm">
-              <div class="form-field">
-                <label for="name">Name:</label>
-                <input required type="text" class="form-field_input" id="name" />
-              </div>
-              <div class="form-field">
-                <label for="email">Email:</label>
-                <input required type="email" class="form-field_input" id="email" />
-              </div>
-              <div class="form-field">
-                <label for="message">Message:</label>
-                <textarea placeholder="Have a suggestion? Let me know..." required name="message"
-                  id="message"></textarea>
-              </div>
-              <button type="submit">Submit</button>
-
-            </form>
-          </section>
-        </div>
         <div className="social_links">
           <p>Connect with me on</p>
           <div className='social_links_objects'>
@@ -71,6 +50,28 @@ const Contact = () => {
 
 
         </div>
+        <div className="contact_form">
+          <section class="contact-section" id="contact">
+            <form action="" id="contactForm">
+              <div class="form-field">
+                <label for="name">Name:</label>
+                <input required type="text" class="form-field_input" id="name" />
+              </div>
+              <div class="form-field">
+                <label for="email">Email:</label>
+                <input required type="email" class="form-field_input" id="email" />
+              </div>
+              <div class="form-field">
+                <label for="message">Message:</label>
+                <textarea placeholder="Have a suggestion? Let me know..." required name="message"
+                  id="message"></textarea>
+              </div>
+              <button type="submit">Submit</button>
+
+            </form>
+          </section>
+        </div>
+        
       </div>
     </div>
   )

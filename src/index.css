@@ -258,7 +258,7 @@ body {
   text-decoration: none;
 }
 
-.links ul .nav-link.link-5 {
+.links ul .nav-link.link-5, .nav-link.link-4 {
   grid-column-start: 1;
   grid-column-end: 3;
   
@@ -360,7 +360,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 3rem;
 
 }
 
