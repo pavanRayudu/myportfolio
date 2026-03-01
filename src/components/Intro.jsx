@@ -26,11 +26,12 @@ const Intro = ({ setVisible }) => {
         <div className="content">
           <h1>Hello, I'm <span >Pavan</span></h1>
           <p className='poppins-regular-italic'>SAP SD Functional Consultant</p>
-          <p className="address">Based in Hyderabad, Telangana- India</p>
+          <p className="address"> Based in Hyderabad, Telangana- India</p>
+
           <p className='introduction'>
             I am an IT professional with 4 years of industry
             experience, specializing in the SAP SD module and
-            contributing to multiple SAP implementation and support projects. I am also a passionate UI developer, striving to build user-friendly and intuitive web applications.
+            contributing to SAP implementation and support projects. I am also a passionate UI developer, striving to build user-friendly and intuitive web applications.
           </p>
         </div>
         <div className="links">
