@@ -3,6 +3,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
 import { FaArrowLeft } from "react-icons/fa";
+import { IoHomeSharp } from "react-icons/io5";
 
 const Education = () => {
 
@@ -11,7 +12,7 @@ const Education = () => {
     <div className='education'>
       <button
         id='home-link' onClick={() => navigate('/')}>
-        <FaArrowLeft /><p>Home</p>
+        <IoHomeSharp /><p>Home</p>
       </button>
       <h1>Education</h1>
       <div className="edu_details">
