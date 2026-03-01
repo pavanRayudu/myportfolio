@@ -42,7 +42,7 @@ const Intro = ({ setVisible }) => {
           <ul>
 
             <Link to='/skills' className='nav-link'>Core Expertise</Link>
-            <Link to='education' className='nav-link '>Education</Link>
+            <Link to='education' className='nav-link '>Qualifications</Link>
 
             <Link to='/experience' className='nav-link link-4'>Professional Experience</Link>
             {/* <Link to='interests' className='nav-link'>Interests</Link> */}
