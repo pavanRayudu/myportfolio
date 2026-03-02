@@ -21,72 +21,26 @@ const Intro = ({ setVisible }) => {
       animate={{ x: 0 }}
       transition={{ ease: "easeOut", duration: 0.5 }}
     >
-      <div className="element"></div>
-      <div className="element-2"></div>
-      <section>
-        <div className='author_image'>
-          {/* <img src={author} alt="Company Logo" /> */}
-        </div>
-        <div className="content">
-          <h1>Hello, I'm <span >Pavan</span></h1>
-          <p className='poppins-regular-italic'>SAP SD Functional Consultant</p>
-          <p className="address"> Based in Hyderabad, Telangana- India</p>
 
-          <p className='introduction'>
-            I am an IT professional with 4 years of industry
-            experience, specializing in the SAP SD module and
-            contributing to SAP implementation and support projects. I am also a passionate UI developer, striving to build user-friendly and intuitive web applications.
-          </p>
-          <p className='introduction'>
-            I am an IT professional with 4 years of industry
-            experience, specializing in the SAP SD module and
-            contributing to SAP implementation and support projects. I am also a passionate UI developer, striving to build user-friendly and intuitive web applications.
-          </p>
-          <p className='introduction'>
-            I am an IT professional with 4 years of industry
-            experience, specializing in the SAP SD module and
-            contributing to SAP implementation and support projects. I am also a passionate UI developer, striving to build user-friendly and intuitive web applications.
-          </p>
-          <p className='introduction'>
-            I am an IT professional with 4 years of industry
-            experience, specializing in the SAP SD module and
-            contributing to SAP implementation and support projects. I am also a passionate UI developer, striving to build user-friendly and intuitive web applications.
-          </p>
-          <p className='introduction'>
-            I am an IT professional with 4 years of industry
-            experience, specializing in the SAP SD module and
-            contributing to SAP implementation and support projects. I am also a passionate UI developer, striving to build user-friendly and intuitive web applications.
-          </p>
-          <p className='introduction'>
-            I am an IT professional with 4 years of industry
-            experience, specializing in the SAP SD module and
-            contributing to SAP implementation and support projects. I am also a passionate UI developer, striving to build user-friendly and intuitive web applications.
-          </p>
-          <p className='introduction'>
-            I am an IT professional with 4 years of industry
-            experience, specializing in the SAP SD module and
-            contributing to SAP implementation and support projects. I am also a passionate UI developer, striving to build user-friendly and intuitive web applications.
-          </p>
-        </div>
-        <div className="links">
-          <ul>
+      <div className="content">
+        <h1>Hello, I'm <span >Pavan</span></h1>
+        <p className='poppins-regular-italic'>SAP SD Functional Consultant</p>
+        <p className="address"> Based in Hyderabad, Telangana- India</p>
 
-            <Link to='/skills' className='nav-link'>Core Expertise</Link>
-            <Link to='education' className='nav-link '>Qualifications</Link>
-
-            <Link to='/experience' className='nav-link link-4'>Professional Experience</Link>
-            {/* <Link to='interests' className='nav-link'>Interests</Link> */}
-            <Link to='contact' className='nav-link link-5'>Connect with me</Link>
-          </ul>
-        </div >
-
-      </section >
-      {/* <div className='footer'>
-        <p>Crafted with Love</p>
-      </div> */}
-
-
-
+        <p className='introduction'>
+          I am an IT professional with 4 years of industry
+          experience, specializing in the SAP SD module and
+          contributing to SAP implementation and support projects. I am also a passionate UI developer, striving to build user-friendly and intuitive web applications.
+        </p>
+      </div>
+      <div className="links">
+        <ul>
+          <Link to='/skills' className='nav-link'>Core Expertise</Link>
+          <Link to='education' className='nav-link '>Qualifications</Link>
+          <Link to='/experience' className='nav-link link-4'>Professional Experience</Link>
+          <Link to='contact' className='nav-link link-5'>Connect with me</Link>
+        </ul>
+      </div >
 
     </div >
   )
