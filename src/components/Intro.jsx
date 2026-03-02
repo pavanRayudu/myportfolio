@@ -22,7 +22,8 @@ const Intro = ({ setVisible }) => {
     >
       <div className="content">
         <h1>Hello, I'm <span>Pavan</span></h1>
-        <p className='poppins-regular-italic'>SAP SD Functional Consultant</p>
+        <p className='poppins-regular-italic'>
+SAP SD Functional Consultant | S/4HANA | Order-to-Cash (O2C) | Intercompany Specialist</p>
         <p className="address"> Based in Hyderabad, Telangana- India</p>
         <div className='divider'>
           <hr />
