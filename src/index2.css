@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com');
+
+
 *,
 *::after,
 *::before {
@@ -205,7 +208,9 @@ body {
 
 .App,
 .education,
-.experience {
+.experience,
+.skills,
+.contact {
     overflow: scroll;
 }
 
@@ -215,4 +220,35 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        h1 span {
+            color: rgb(227, 255, 47);
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .divider {
+            margin-top: 1.5rem;
+            opacity: 0.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            hr {
+                width: 100px;
+                opacity: 0.25;
+            }
+
+            p {
+                letter-spacing: 5px;
+                font-size: calc(0.75 * var(--font-size));
+            }
+        }
+
+    }
 }

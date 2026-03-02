@@ -21,12 +21,15 @@ const Intro = ({ setVisible }) => {
       animate={{ x: 0 }}
       transition={{ ease: "easeOut", duration: 0.5 }}
     >
-
       <div className="content">
-        <h1>Hello, I'm <span >Pavan</span></h1>
+        <h1>Hello,<br /> I'm <span>Pavan Rayudu</span></h1>
         <p className='poppins-regular-italic'>SAP SD Functional Consultant</p>
         <p className="address"> Based in Hyderabad, Telangana- India</p>
-
+        <div className='divider'>
+          <hr />
+          <p>ABOUT ME</p>
+          <hr />
+        </div>
         <p className='introduction'>
           I am an IT professional with 4 years of industry
           experience, specializing in the SAP SD module and
