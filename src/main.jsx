@@ -27,7 +27,7 @@ export default ScrollToTop;
 createRoot(document.getElementById('root')).render(
   <div className='main'>
     <BrowserRouter>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Routes>
         <Route path='/' element={<App />} />
         <Route path='/skills' element={<Skills />} />
