@@ -168,9 +168,15 @@ body {
     }
 }
 
-.App {
+.App{
+    border: 3px solid red;
     display: flex;
     flex-direction: column;
     height: 100vh; 
     height: calc(var(--vh, 1vh) * 100);
 }
+
+.intro {
+ height: 100%;
+ overflow: scroll;
+} 
