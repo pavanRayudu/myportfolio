@@ -167,13 +167,21 @@ body {
         width: 780px;
     }
 }
-
-.App{
-    border: 3px solid red;
+.main {
+    border: 5px solid rgb(237, 11, 11);
     display: flex;
     flex-direction: column;
     height: 100vh; 
     height: calc(var(--vh, 1vh) * 100);
+
+}
+
+.App{
+    /* border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    height: calc(var(--vh, 1vh) * 100); */
 }
 
 .intro, .education,.experience {
