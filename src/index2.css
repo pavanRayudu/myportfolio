@@ -197,6 +197,7 @@ body {
 }
 
 .App,
+.intro,
 .education,
 .experience,
 .skills,
@@ -240,7 +241,7 @@ body {
         gap: 1rem;
 
         h1 span {
-            color: rgb(227, 255, 47);
+            /* color: rgb(227, 255, 47); */
             font-family: 'Dancing Script', cursive;
         }
 
@@ -282,10 +283,13 @@ body {
             .nav-link {
                 color: var(--color-white);
 
+                font-size: calc(0.75 * var(--font-size));
+
+
                 width: 100%;
-                border: 1px solid rgb(231, 208, 208);
+                border: 1px solid rgba(231, 208, 208, 0.5);
                 border-radius: 8px;
-                height: 4rem;
+                height: 3rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -294,7 +298,7 @@ body {
     }
 
     .social_links {
-        margin-top: 1rem;
+        margin-top: 0rem;
 
         .divider {
             margin-top: 1.5rem;
