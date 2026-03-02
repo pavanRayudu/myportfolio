@@ -37,6 +37,16 @@ const Intro = ({ setVisible }) => {
             experience, specializing in the SAP SD module and
             contributing to SAP implementation and support projects. I am also a passionate UI developer, striving to build user-friendly and intuitive web applications.
           </p>
+          <p className='introduction'>
+            I am an IT professional with 4 years of industry
+            experience, specializing in the SAP SD module and
+            contributing to SAP implementation and support projects. I am also a passionate UI developer, striving to build user-friendly and intuitive web applications.
+          </p>
+          <p className='introduction'>
+            I am an IT professional with 4 years of industry
+            experience, specializing in the SAP SD module and
+            contributing to SAP implementation and support projects. I am also a passionate UI developer, striving to build user-friendly and intuitive web applications.
+          </p>
         </div>
         <div className="links">
           <ul>
