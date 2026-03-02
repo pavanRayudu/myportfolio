@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from "framer-motion"
 import { Link } from 'react-router-dom'
-import Skills from './Skills'
-import author from '../assets/author.jpg'
+import { FaInstagram, FaGithub, FaSnapchat, FaLinkedin } from "react-icons/fa";
 
 const IMAGES = {
   image1: new URL('../assets/images/author2.JPG', import.meta.url).href
@@ -44,6 +43,43 @@ const Intro = ({ setVisible }) => {
           <Link to='contact' className='nav-link link-5'>Connect with me</Link>
         </ul>
       </div >
+
+
+      <div className="social_links">
+        <div className='divider'>
+          <hr />
+          <p>CONNECT WITH ME ON</p>
+          <hr />
+        </div>
+        <div className='social_links_objects'>
+          <a
+            href="https://www.instagram.com/pavanrayudu_/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://github.com/pavanRayudu"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rpvvamsi/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+
+        </div>
+
+
+      </div>
+
+
 
     </div >
   )
