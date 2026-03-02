@@ -39,8 +39,9 @@ const Intro = ({ setVisible }) => {
         <ul>
           <Link to='/skills' className='nav-link'>Core Expertise</Link>
           <Link to='education' className='nav-link '>Qualifications</Link>
+          <Link to='contact' className='nav-link link-5'>Blogs</Link>
+
           <Link to='/experience' className='nav-link link-4'>Professional Experience</Link>
-          <Link to='contact' className='nav-link link-5'>Connect with me</Link>
         </ul>
       </div >
 
@@ -48,7 +49,7 @@ const Intro = ({ setVisible }) => {
       <div className="social_links">
         <div className='divider'>
           <hr />
-          <p>CONNECT WITH ME ON</p>
+          <p>Let’s connect on</p>
           <hr />
         </div>
         <div className='social_links_objects'>

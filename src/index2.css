@@ -123,11 +123,15 @@ html {
 }
 
 :root {
-    --font-size: 18px;
+    --font-size: 16px;
     --font-family: "Poppins", serif;
     --color-white: #cecece;
     --color-black: rgb(40, 40, 43);
     --primary-color: rgb(216, 216, 3);
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 a {
@@ -158,20 +162,13 @@ body {
     background-color: var(--color-white);
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 
     background: #0F2027;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-    /* background: url('./assets/chess board.jpg');
-    background-position: center;
-    background-size: cover; */
 }
+
+
 
 @media screen and (min-width: 500px) {
     body {
@@ -242,7 +239,7 @@ body {
         gap: 1rem;
 
         h1 span {
-            /* color: rgb(227, 255, 47); */
+            color: rgb(227, 255, 47);
             font-family: 'Dancing Script', cursive;
         }
 
@@ -270,39 +267,27 @@ body {
     .links {
 
         ul {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
+
             text-align: center;
             gap: 0.5rem;
             list-style: none;
             padding-inline: 1rem;
 
-
             .nav-link {
+                padding-inline: 0.5rem;
                 color: var(--color-white);
-
                 font-size: calc(0.75 * var(--font-size));
-
-
                 width: 100%;
-                border: 1px solid rgba(231, 208, 208, 0.5);
                 border-radius: 8px;
                 height: 3rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+               
+                text-decoration: underline;
             }
         }
     }
 
     .social_links {
-        margin-top: 0rem;
-
         .divider {
-            margin-top: 1.5rem;
             opacity: 0.5;
             display: flex;
             align-items: center;
@@ -316,12 +301,12 @@ body {
 
             p {
                 letter-spacing: 5px;
+                text-transform: uppercase;
                 font-size: calc(0.75 * var(--font-size));
             }
         }
 
         .social_links_objects {
-            margin-top: 1rem;
             display: flex;
             align-items: center;
             justify-content: center;
