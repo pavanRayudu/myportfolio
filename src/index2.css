@@ -123,7 +123,7 @@ html {
 }
 
 :root {
-    --font-size: 16px;
+    --font-size: 18px;
     --font-family: "Poppins", serif;
     --color-white: #cecece;
     --color-black: rgb(40, 40, 43);
@@ -287,6 +287,10 @@ body {
     }
 
     .social_links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
         .divider {
             opacity: 0.5;
             display: flex;
