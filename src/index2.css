@@ -169,22 +169,16 @@ body {
 }
 .main {
     border: 5px solid rgb(237, 11, 11);
-    display: flex;
-    flex-direction: column;
     height: 100vh; 
     height: calc(var(--vh, 1vh) * 100);
+    overflow: scroll;
 
 }
 
 .App{
-    /* border: 3px solid red;
-    display: flex;
-    flex-direction: column;
-    height: 100vh; 
-    height: calc(var(--vh, 1vh) * 100); */
+    
 }
 
 .intro, .education,.experience {
- height: 100%;
- overflow: scroll;
+
 } 
