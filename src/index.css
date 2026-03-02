@@ -20,6 +20,7 @@ html {
 }
 
 body {
+user-select: none;
   height: stretch;
   font-size: var(--font-size);
   font-family: "Poppins", serif;
