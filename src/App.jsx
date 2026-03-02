@@ -5,7 +5,7 @@ import Skills from './components/Skills'
 import Experience from './components/Experience'
 import Education from './components/Education'
 import Interests from './components/Interests'
-import Contact from './components/Contact'
+import Contact from './components/Blogs'
 import { useState } from 'react';
 import { motion } from "framer-motion"
 // ................
