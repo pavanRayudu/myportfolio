@@ -125,9 +125,16 @@ html {
 :root {
     --font-size: 18px;
     --font-family: "Poppins", serif;
-    --color-white: #cecece;
-    --color-black: rgb(40, 40, 43);
+    --color-white: #ffffff;
+    --color-black: rgb(44, 44, 44);
     --primary-color: rgb(216, 216, 3);
+    --color-blue-100: rgba(84, 84, 222, 1);
+    --color-blue-75: rgba(84, 84, 222, 0.75);
+    --color-blue-50: rgba(84, 84, 222, 0.5);
+    --color-blue-25: rgba(84, 84, 222, 0.25);
+    --color-blue-10: rgba(84, 84, 222, 0.10);
+    --color-blue-05: rgba(84, 84, 222, 0.05);
+    --color-green: rgb(19, 166, 19);
 }
 
 ::-webkit-scrollbar {
@@ -184,10 +191,10 @@ body {
 }
 
 .main {
-    background: rgba(11, 53, 120, 0.3);
+    /* background: rgba(11, 53, 120, 0.3);
     box-shadow: 0 4px 30px var(--color-black);
     backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); */
 
     position: relative;
     height: 100vh;
@@ -195,6 +202,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    background-color: var(--color-blue-10);
 }
 
 .App,
@@ -242,7 +250,7 @@ body {
         gap: 0.5rem;
 
         h1 span {
-            color: rgb(227, 255, 47);
+            color: rgb(40, 108, 235);
             font-family: 'Dancing Script', cursive;
         }
 
@@ -256,7 +264,6 @@ body {
 
             hr {
                 width: 100px;
-                opacity: 0.25;
             }
 
             p {
@@ -329,7 +336,6 @@ body {
 
             hr {
                 width: 100px;
-                opacity: 0.25;
             }
 
             p {
@@ -345,6 +351,11 @@ body {
             justify-content: center;
             gap: 1.2rem;
             font-size: calc(1.25 * var(--font-size));
+
+            a {
+                color: var(--color-black);
+            }
+
         }
     }
 }
@@ -363,5 +374,55 @@ button {
     gap: 0.3rem;
     font-size: var(--font-size);
     justify-content: center;
+
+}
+
+.experience {
+    h1 {
+        /* color: green; */
+        line-height: 2.75rem;
+        padding-block: 1rem;
+    }
+
+    .exp_details {
+        padding-block: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+
+
+        .exp {
+            background-color: var(--color-blue-10);
+
+            padding: 1rem 1.5rem;
+            /* border: 2px solid red; */
+            border-radius: 1.5rem;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+
+            .role {
+                font-weight: bold;
+                font-size: calc(1.2 * var(--font-size));
+            }
+
+            .company_name {
+                font-style: italic;
+            }
+
+            .duration {
+                opacity: 0.75;
+            }
+            .rolesres_title{
+                margin-top: 1rem;
+            }
+
+            .degree_highlights {
+                list-style: circle;
+            }
+        }
+    }
 
 }

@@ -37,10 +37,10 @@ SAP SD Functional Consultant | SAP S/4HANA Implementation | Order-to-Cash (O2C)<
       <div className="links">
         <ul>
           <Link to='/experience' className='nav-link' id='link-1'>View my Professional Experience</Link>
-          <Link to='/experience' className='nav-link' id='link-2'>Download Resume</Link>
+          <Link to='https://drive.google.com/file/d/17R5xkmIyw98MD2XyfRgYiPkwf5WH3KqJ/view?pli=1' className='nav-link' id='link-2'>Download Resume</Link>
           <Link to='/skills' className='nav-link link-1' id='link-3'>Core Expertise</Link>
           <Link to='education' className='nav-link' id='link-4'>Qualifications</Link>
-          <Link to='/blogs' className='nav-link ' id='link-5'>Blogs</Link>
+          {/* <Link to='/blogs' className='nav-link ' id='link-5'>Blogs</Link> */}
 
         </ul>
       </div >
