@@ -241,7 +241,7 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding-block-start: 5rem;
+    padding-block-start: 3.75rem;
     gap: 2rem;
 
     .content {
