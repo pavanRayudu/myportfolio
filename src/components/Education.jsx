@@ -2,14 +2,17 @@ import React from 'react'
 
 import { useNavigate } from 'react-router-dom';
 
-import { FaArrowLeft } from "react-icons/fa";
+import { motion, AnimatePresence, easeIn, easeInOut, easeOut } from 'framer-motion';
 import { IoHomeSharp } from "react-icons/io5";
 
 const Education = () => {
 
   const navigate = useNavigate();
   return (
-    <div className='education'>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className='education'>
       <button
         id='home-link' onClick={() => navigate('/')}>
         <IoHomeSharp /><p>Home</p>
@@ -17,7 +20,7 @@ const Education = () => {
       <h1>Education</h1>
       <div className="edu_details">
         <div className="edu edu_1">
-          <p className="degree">Bachelor of Technology</p>
+          <h2 className="degree">Bachelor of Technology</h2>
           <p className="institution_name">Rajiv Gandhi University of Knowledge Technologies, Nuzvid</p>
           <p className="duration">2018 - 2022</p>
           <ul className="degree_highlights">
@@ -27,7 +30,7 @@ const Education = () => {
           </ul>
         </div>
         <div className="edu edu_2">
-          <p className="degree">Pre University Course</p>
+          <h2 className="degree">Pre University Course</h2>
           <p className="institution_name">Rajiv Gandhi University of Knowledge Technologies, Nuzvid</p>
           <p className="duration">2016 - 2018</p>
           <ul className="degree_highlights">
@@ -36,16 +39,16 @@ const Education = () => {
           </ul>
         </div>
         <div className="edu edu_2">
-          <p className="degree">Class -X (CBSE Board)</p>
+          <h2 className="degree">Class -X (CBSE Board)</h2>
           <p className="institution_name">Jawahar Navodaya Vidyalaya, Yanam</p>
           <p className="duration">2015 - 2016</p>
           <ul className="degree_highlights">
             <li>Completed in 2016 with 10 CGPA</li>
-            
+
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { motion } from "framer-motion"
 import { Link } from 'react-router-dom'
 import { FaInstagram, FaGithub, FaSnapchat, FaLinkedin } from "react-icons/fa";
+import { motion, AnimatePresence, easeIn, easeInOut, easeOut } from 'framer-motion';
 
 const IMAGES = {
   image1: new URL('../assets/images/author2.JPG', import.meta.url).href
@@ -15,15 +15,15 @@ const Intro = ({ setVisible }) => {
   }
 
   return (
-    <div className='intro'
-      initial={{ x: 100 }}
-      animate={{ x: 0 }}
-      transition={{ ease: "easeOut", duration: 0.5 }}
+    <motion.div className='intro'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+
     >
       <div className="content">
         <h1>Hello, I'm <span>Pavan</span></h1>
         <p>
-SAP SD Functional Consultant | SAP S/4HANA Implementation | Order-to-Cash (O2C)</p>
+          SAP SD Functional Consultant | SAP S/4HANA Implementation | Order-to-Cash (O2C)</p>
         <p className="address"> Based in Hyderabad, Telangana- India</p>
         <div className='divider'>
           <hr />
@@ -82,7 +82,7 @@ SAP SD Functional Consultant | SAP S/4HANA Implementation | Order-to-Cash (O2C)<
 
 
 
-    </div >
+    </motion.div >
   )
 }
 

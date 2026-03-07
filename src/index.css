@@ -20,24 +20,6 @@ html {
   --primary-color: rgb(216, 216, 3);
 }
 
-body {
-  font-size: var(--font-size);
-  font-family: var(--font-family);
-  color: red;
-  user-select: none;
-  height: stretch;
-
-  color: var(--font-color);
-  /* background-color: var(--background-color); */
-}
-
-@media screen and (min-width: 500px) {
-  body {
-    display: none;
-  }
-}
-
-
 .poppins-thin {
   font-family: "Poppins", serif;
   font-weight: 100;
@@ -145,6 +127,26 @@ body {
   font-weight: 900;
   font-style: italic;
 }
+
+body {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  color: red;
+  user-select: none;
+  height: stretch;
+
+  color: var(--font-color);
+  /* background-color: var(--background-color); */
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    display: none;
+  }
+}
+
+
+
 
 /* .App {
   display: flex;
