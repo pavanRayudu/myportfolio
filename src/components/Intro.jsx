@@ -18,7 +18,6 @@ const Intro = ({ setVisible }) => {
     <motion.div className='intro'
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-
     >
       <div className="content">
         <h1>Hello, I'm <span>Pavan</span></h1>
@@ -31,7 +30,7 @@ const Intro = ({ setVisible }) => {
           <hr />
         </div>
         <p className='introduction'>
-          I am an SAP SD Consultant with 4+ years of experience in SAP implementation and rollout projects. I specialize in Order-to-Cash (O2C) processes, Implementing Business scenarios, and system configuration in SAP S/4HANA. Along with SAP, I enjoy building web applications using React and exploring modern UI development.
+          I am an SAP SD Consultant with 3.7+ years of experience in SAP implementation and rollout projects. I specialize in Order-to-Cash (O2C) processes, Implementing Business scenarios, and system configuration in SAP S/4HANA. Along with SAP, I enjoy building web applications using React and exploring modern UI development.
         </p>
       </div>
       <div className="links">
