@@ -79,6 +79,10 @@ const Intro = ({ setVisible }) => {
 
       </div>
 
+      <div className='footer'>
+        <p>© 2026 Pavan Rayudu | Crafted with love ♡ </p>
+      </div>
+
 
 
     </motion.div >

@@ -221,18 +221,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    position: relative;
 
-    .footer {
-        position: absolute;
-        bottom: 0;
-
-        p {
-            font-size: calc(0.6 * var(--font-size));
-            opacity: 0.5;
-        }
-
-    }
 }
 
 
@@ -358,6 +347,13 @@ body {
 
         }
     }
+
+    .footer {
+        p {
+            font-size: calc(0.75 * var(--font-size));
+            opacity: 0.5;
+        }
+    }
 }
 
 
@@ -480,11 +476,11 @@ button {
             flex-direction: column;
             gap: 0.2rem;
 
-            .duration{
+            .duration {
                 opacity: 0.75;
             }
 
-            ul{
+            ul {
                 list-style: none;
                 font-style: italic;
             }
