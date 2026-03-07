@@ -2,7 +2,7 @@ import React from 'react'
 
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence, easeIn, easeInOut, easeOut } from 'framer-motion';
-
+import { SiOnlyoffice } from "react-icons/si";
 import { FaArrowLeft } from "react-icons/fa";
 import { IoHomeSharp } from "react-icons/io5";
 
@@ -16,13 +16,21 @@ const Experience = () => {
         id='home-link' onClick={() => navigate('/')}>
         <IoHomeSharp /><p>Home</p>
       </button>
-      <h1>Professional Experience</h1>
+      <h1><SiOnlyoffice size={36}/>Experience</h1>
       <div className="exp_details">
         <div className="exp exp_1">
-          <p className="role">Associate Consultant</p>
+          <h2 className="role">Associate Consultant</h2>
           <p className="company_name">Infosys Limited, Hyderabad</p>
-          <p className="duration">Jul, 2022 - present</p>
+          <p className="duration">Oct, 2025 - Present</p>
           <p className="project_type">Project type: SAP S/4 HANA Implementation</p>
+          <ul className='skill_pills'>
+            <li>SAP S/4 HANA</li>
+            <li>SAP SD</li>
+            <li>ABAP</li>
+            <li>RICEFW</li>
+            <li>FSDs</li>
+            <li>UAT</li>
+          </ul>
           <p className="rolesres_title">Roles and Responsibilities: </p>
           <ul className="degree_highlights rolesres_content">
             <li>Currently working as part of the
@@ -38,10 +46,16 @@ const Experience = () => {
         </div>
 
         <div className="exp exp_2">
-          <p className="role">Senior Systems Engineer</p>
+          <h2 className="role">Senior Systems Engineer</h2>
           <p className="company_name">Infosys Limited, Hyderabad</p>
-          <p className="duration">Jul, 2022 - present</p>
+          <p className="duration">Oct, 2024 - Sep, 2025</p>
           <p className="project_type">Project type: Roll Out Project</p>
+          <ul className='skill_pills'>
+            <li>SAP SCM</li>
+            <li>Rollout</li>
+            <li>Intrecompany Process</li>
+            <li>FUT</li>
+          </ul>
           <p className="rolesres_title">Roles and Responsibilities: </p>
           <ul className="degree_highlights rolesres_content">
             <li>Worked as part of the SCM team on a rollout project, responsible for integrated testing of intercompany business flows.</li>
@@ -54,9 +68,9 @@ const Experience = () => {
         </div>
 
         <div className="exp exp_3">
-          <p className="role">Systems Engineer</p>
+          <h2 className="role">Systems Engineer</h2>
           <p className="company_name">Infosys Limited, Hyderabad</p>
-          <p className="duration">Jul, 2022 - present</p>
+          <p className="duration">Jul, 2022 - Oct, 2024</p>
           <p className="project_type">Project type: Roll Out Project</p>
           <p className="rolesres_title">Roles and Responsibilities: </p>
           <ul className="degree_highlights rolesres_content">

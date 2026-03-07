@@ -43,7 +43,18 @@ const Skills = ({ visible, setVisible }) => {
 
 
           >SAP SD on S/4 HANA</motion.h2>
+          <ul className='skill_pills'>
+            <li>SD Configurations</li>
+            <li>IDocs</li>
+            <li>O2C</li>
+            <li>Pricing</li>
+            <li>UAT Support</li>
+            <li>Functional Specifications</li>
+            <li>RICEFW Objects</li>
+            <li>Functional Testing</li>
+          </ul>
           <motion.ul
+            className='skills-list'
             initial={{ x: 500 }}
             animate={{
               x: 0,
@@ -52,19 +63,19 @@ const Skills = ({ visible, setVisible }) => {
                 ease: easeInOut
               }
             }}>
-            <li>Good understanding and Hands-on exposure to SAP ECC and S/4 Systems</li>
-            <li>SAP S/4HANA Implementation & Rollout</li>
-            <li>Pricing and Billing Configuration</li>
+            <li>Comprehensive Hands-on experience in both SAP ECC and S/4 environments</li>
+            <li>Expertise in SAP S/4HANA Implementation & Rollout</li>
             <li>Order-to-Cash (OTC) Process</li>
+            <li>In-depth proficiency in Pricing, output, text, partner determinations </li>
+
             <li>Implementation of SD Business Processes and Configurations</li>
             <li>IDoc Monitoring and Error Handling</li>
             <li>Implementing Special Business scenarios in SD</li>
-            <li>Functional Specification (FS) preparation for developments and enhancements </li>
+            <li>Expertise in drafting detailed Functional Specification (FS) preparation for developments and enhancements </li>
             <li>Creating testcases for business scenarios</li>
             <li>Functional testing and UAT Support</li>
             <li>Master data management</li>
             <li>Output Management</li>
-            <li>Good Understanding on Pricing, output, text, partner determinations </li>
             <li>Unit Testing, Integration Testing, and UAT Support</li>
             <li>Integration of SD with MM and FI in S/4HANA</li>
             <li>Cut over activities and Go-Live support</li>
@@ -83,7 +94,18 @@ const Skills = ({ visible, setVisible }) => {
 
 
           >UI Development</motion.h2>
+          <ul className='skill_pills'>
+            <li>UI</li>
+            <li>Figma Essencials</li>
+            <li>HTML5</li>
+            <li>CSS / SCSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>Git</li>
+          </ul>
           <motion.ul
+            className='skills-list'
             initial={{ x: 500 }}
             animate={{
               x: 0,
