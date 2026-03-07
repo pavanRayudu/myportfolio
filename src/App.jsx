@@ -15,7 +15,7 @@ function App() {
     <div className='App'>
       <Intro  />
       <div className='footer'>
-        <p>© 2026 Pavan Rayudu | Crafted with love and 2 Red Bulls</p>
+        {/* <p>© 2026 Pavan Rayudu | Crafted with love and 2 Red Bulls</p> */}
       </div>
     </div>
   )

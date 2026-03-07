@@ -30,18 +30,17 @@ const Intro = ({ setVisible }) => {
           <hr />
         </div>
         <p className='introduction'>
-          I am an IT professional with 4 years of industry
-          experience, specializing in the SAP SD module and
-          contributing to SAP implementation and support projects. I am also a passionate UI developer, striving to build user-friendly and intuitive web applications.
+          I am an SAP SD Consultant with 4+ years of experience in SAP implementation and rollout projects. I specialize in Order-to-Cash (O2C) processes, Implementing Business scenarios, and system configuration in SAP S/4HANA. Along with SAP, I enjoy building web applications using React and exploring modern UI development.
         </p>
       </div>
       <div className="links">
         <ul>
-          <Link to='/skills' className='nav-link'>Core Expertise</Link>
-          <Link to='education' className='nav-link '>Qualifications</Link>
-          <Link to='/blogs' className='nav-link link-5'>Blogs</Link>
+          <Link to='/experience' className='nav-link' id='link-1'>View my Professional Experience</Link>
+          <Link to='/experience' className='nav-link' id='link-2'>Download Resume</Link>
+          <Link to='/skills' className='nav-link link-1' id='link-3'>Core Expertise</Link>
+          <Link to='education' className='nav-link' id='link-4'>Qualifications</Link>
+          <Link to='/blogs' className='nav-link ' id='link-5'>Blogs</Link>
 
-          <Link to='/experience' className='nav-link link-4'>Professional Experience</Link>
         </ul>
       </div >
 
