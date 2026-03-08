@@ -1,7 +1,4 @@
-import React from 'react'
 import { IoHomeSharp } from "react-icons/io5";
-import { FaInstagram, FaGithub, FaSnapchat, FaLinkedin } from "react-icons/fa";
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 const Blogs = () => {
@@ -13,7 +10,6 @@ const Blogs = () => {
         <IoHomeSharp /><p>Home</p>
       </button>
       <h1>Blogs</h1>
-      
     </div>
   )
 }

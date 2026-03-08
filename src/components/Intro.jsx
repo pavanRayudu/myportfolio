@@ -1,18 +1,8 @@
-import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FaInstagram, FaGithub, FaSnapchat, FaLinkedin } from "react-icons/fa";
-import { motion, AnimatePresence, easeIn, easeInOut, easeOut } from 'framer-motion';
+import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
-const IMAGES = {
-  image1: new URL('../assets/images/author2.JPG', import.meta.url).href
-}
-
-const Intro = ({ setVisible }) => {
-  const [data, setData] = useState({})
-
-  const showView = (view) => {
-    sendDataToApp(data)
-  }
+const Intro = () => {
 
   return (
     <motion.div className='intro'
@@ -43,8 +33,6 @@ const Intro = ({ setVisible }) => {
 
         </ul>
       </div >
-
-
       <div className="social_links">
         <div className='divider'>
           <hr />
@@ -78,13 +66,9 @@ const Intro = ({ setVisible }) => {
 
 
       </div>
-
       <div className='footer'>
         <p>© 2026 Pavan Rayudu | Crafted with love ♡ </p>
       </div>
-
-
-
     </motion.div >
   )
 }

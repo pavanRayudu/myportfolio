@@ -1,11 +1,8 @@
-import React, { useState } from 'react'
-import { IoMdCloseCircleOutline } from "react-icons/io";
-import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import { IoHomeSharp } from "react-icons/io5";
-import { motion, AnimatePresence, easeIn, easeInOut, easeOut } from 'framer-motion';
+import { motion, easeInOut, easeOut } from 'framer-motion';
 
-const Skills = ({ visible, setVisible }) => {
+const Skills = () => {
   const navigate = useNavigate();
 
   return (
@@ -28,7 +25,6 @@ const Skills = ({ visible, setVisible }) => {
           }
         }}
       >Core Expertise</motion.h1>
-      {/* <hr className='divider'/> */}
       <div className='skill-section'>
         <div className='technical technical-sap'>
           <motion.h2
@@ -67,7 +63,6 @@ const Skills = ({ visible, setVisible }) => {
             <li>Expertise in SAP S/4HANA Implementation & Rollout</li>
             <li>Order-to-Cash (OTC) Process</li>
             <li>In-depth proficiency in Pricing, output, text, partner determinations </li>
-
             <li>Implementation of SD Business Processes and Configurations</li>
             <li>IDoc Monitoring and Error Handling</li>
             <li>Implementing Special Business scenarios in SD</li>

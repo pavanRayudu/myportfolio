@@ -1,14 +1,11 @@
-import React from 'react'
-
 import { useNavigate } from 'react-router-dom';
-
-import { motion, AnimatePresence, easeIn, easeInOut, easeOut } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { IoHomeSharp } from "react-icons/io5";
 import { FaGraduationCap } from "react-icons/fa";
 
 const Education = () => {
-
   const navigate = useNavigate();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -18,7 +15,7 @@ const Education = () => {
         id='home-link' onClick={() => navigate('/')}>
         <IoHomeSharp /><p>Home</p>
       </button>
-      <h1> <FaGraduationCap size={38}/>Education</h1>
+      <h1> <FaGraduationCap size={38} />Education</h1>
       <div className="edu_details">
         <div className="edu edu_1">
           <h2 className="degree">

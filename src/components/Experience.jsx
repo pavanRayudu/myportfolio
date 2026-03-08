@@ -1,9 +1,6 @@
-import React from 'react'
-
 import { useNavigate } from 'react-router-dom';
-import { motion, AnimatePresence, easeIn, easeInOut, easeOut } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { SiOnlyoffice } from "react-icons/si";
-import { FaArrowLeft } from "react-icons/fa";
 import { IoHomeSharp } from "react-icons/io5";
 
 const Experience = () => {
@@ -16,7 +13,7 @@ const Experience = () => {
         id='home-link' onClick={() => navigate('/')}>
         <IoHomeSharp /><p>Home</p>
       </button>
-      <h1><SiOnlyoffice size={36}/>Experience</h1>
+      <h1><SiOnlyoffice size={36} />Experience</h1>
       <div className="exp_details">
         <div className="exp exp_1">
           <h2 className="role">Associate Consultant</h2>
