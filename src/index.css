@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com');
+@import './GlobalStyles.css';
+
 *,
 *::after,
 *::before {
@@ -8,479 +11,334 @@
 
 html {
   scroll-behavior: smooth;
-  text-select: none;
-}
-
-
-:root {
-  --font-size: 18px;
-  --font-family: "Poppins", serif;
-  --color-white: rgb(231, 231, 231);
-  --color-black: rgb(40, 40, 43);
-  --primary-color: rgb(216, 216, 3);
-}
-
-.poppins-thin {
-  font-family: "Poppins", serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", serif;
-  font-weight: 900;
-  font-style: italic;
+  user-select: none;
 }
 
 body {
   font-size: var(--font-size);
   font-family: var(--font-family);
-  color: red;
-  user-select: none;
-  height: stretch;
+  color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+}
 
-  color: var(--font-color);
-  /* background-color: var(--background-color); */
+.main {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--color-white);
 }
 
 @media screen and (min-width: 500px) {
   body {
-    display: none;
+    align-items: center;
+  }
+
+  .main {
+    width: 780px;
   }
 }
 
-
-
-
-/* .App {
-  display: flex;
-  flex-direction: column;
-  height: 100dvh;
-  position: relative;
-  scroll-behavior: no-scr; 
-} 
-*/
-
-/* .intro {
-  background: url('./assets/chess board.jpg');
-  background-position: center;
-  background-size: cover;
- 
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-} */
-/* .intro .footer{
-  bottom: 0;
-  position: absolute;
-  font-size: 0.8rem;
-} */
-
-.intro .image .author-image {
-  max-width: 100%;
-
-}
-
-
-
-
-
-.intro .element {
-  position: absolute;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 1;
-  background: linear-gradient(var(--background-color), transparent, var(--background-color));
-}
-
-.intro .element-2 {
-  position: absolute;
-  z-index: 0;
-  background-color: var(--background-color);
-  opacity: 0.6;
-  width: 100%;
-  height: 100%;
-}
-
-.intro section {
-  position: absolute;
-  /* bottom: 0; */
-}
-
-
-.intro section .content {
-  /* background-color: red; */
-  margin-inline: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-}
-
-.intro section .content h1 {
-  font-size: 2.5rem;
-}
-
-.intro section .content h1 span {
-  color: var(--primary-color);
-  font-family: "Shadows Into Light", cursive;
-
-}
-
-.intro section .content .introduction {
-  padding-bottom: 1rem;
-  border-bottom: 2px solid rgb(101, 101, 101);
-
-
-}
-
-.links {
-  margin-inline: 0rem;
-  padding-block: 1rem;
-
-  width: 100%;
-}
-
-.links ul {
-  /* list-style: none; */
-  grid-template-columns: 50% 50%;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-  gap: 0.5rem;
-  list-style: none;
-  padding-inline: 1rem;
-  font-size: calc(0.8 * var(--font-size));
-}
-
-
-
-.nav-link {
-  width: 100%;
-  border: 1px solid rgb(231, 208, 208);
-  border-radius: 8px;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  color: var(--font-color);
-  text-decoration: none;
-}
-
-.links ul .nav-link.link-5,
-.nav-link.link-4 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-
-}
-
-.skills,
-.experience,
+.App,
+.intro,
 .education,
+.experience,
+.skills,
 .contact {
-  padding: 1rem;
-  width: 100%;
-  /* background-color: rgb(36, 36, 36); */
+  overflow: scroll;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 #home-link {
-  background: none;
-  font-size: calc(1 * var(--font-size));
   display: flex;
-  gap: 0.2rem;
+  gap: 0.3rem;
+  font-size: var(--font-size);
   justify-content: center;
-  border: none;
-  font-weight: 700;
-  color: var(--font-color);
-  text-decoration: none;
-  opacity: 0.5;
+
 }
 
-.skills h1,
-.education h1,
-.experience h1 {
-  text-align: left;
-  margin-top: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgb(138, 138, 138);
-}
+/*--------------- Intro page Styles goes from here --------------- */
 
-.skills .skill-section {
+.intro {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding-block: 1rem;
+  padding-block-start: 4.5rem;
+  gap: 2rem;
 }
 
-.technical h2 {
-  margin-bottom: 0.8rem;
-  color: var(--primary-color);
+.intro .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.technical ul {
-  padding-inline: 1.5rem 0;
+.intro .content h1 span {
+  color: rgb(40, 108, 235);
+  font-family: 'Dancing Script', cursive;
 }
 
-.skills h1 {}
+.intro .content .divider {
+  margin-top: 1.5rem;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 
+.intro .content .divider hr {
+  width: 100px;
+  opacity: 0.4;
+}
 
-.education .edu_details {
+.intro .content .divider p {
+  letter-spacing: 5px;
+  font-size: calc(0.75 * var(--font-size));
+}
+
+.links ul {
+  text-align: center;
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.links ul .nav-link {
+  padding-inline: 0.5rem;
+  color: var(--color-white);
+  width: 100%;
+  border-radius: 8px;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#link-1,
+#link-2,
+#link-5 {
+  width: 100%;
+  background-color: rgb(19, 166, 19);
+}
+
+#link-2 {
+  background-color: rgb(84, 84, 222);
+}
+
+#link-3,
+#link-4,
+#link-5 {
+  color: var(--color-black);
+}
+
+@media screen and (max-width: 500px) {
+
+  #link-1,
+  #link-2,
+  #link-5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.intro .social_links {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-block: 1rem;
 }
 
-.education .edu_details .edu .degree {
-
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary-color);
+.intro .social_links .divider {
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.education .edu_details .edu .institution_name {
-  font-style: italic;
-  font-weight: 200;
+.intro .social_links .divider hr {
+  opacity: 0.4;
+  width: 100px;
 }
 
-.degree_highlights {
-  margin-inline: 1rem;
+.intro .social_links .divider p {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: calc(0.75 * var(--font-size));
+}
+
+.intro .social_links .social_links_objects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  font-size: calc(1.25 * var(--font-size));
+
+  a {
+    color: var(--color-black);
+  }
+}
+
+.intro .footer p {
+  font-size: calc(0.75 * var(--font-size));
+  opacity: 0.5;
+}
+
+/*--------------- Experience page Styles goes from here --------------- */
+.experience h1 {
+  /* color: green; */
+  line-height: 2.75rem;
   padding-block: 1rem;
-  list-style-type: circle;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-/* Experience section styling goes from here */
 .experience .exp_details {
-  margin-top: 1rem;
+  padding-block: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.experience .exp_details .exp .role {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary-color);
+.experience .exp_details .exp {
+  background-color: var(--color-blue-10);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
 }
 
 .experience .exp_details .exp .company_name {
   font-style: italic;
-  font-weight: 200;
 }
 
-.rolesres_title {
-  margin-top: 1rem;
+.experience .exp_details .exp .duration {
+  opacity: 0.5;
 }
 
-.contact_details {
-  /* background-color: red; */
+.experience .exp_details .exp .skill_pills {
+  margin-block: 0.5rem;
+  list-style: none;
+  gap: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.experience .exp_details .exp .skill_pills li {
+  font-size: calc(0.8 * var(--font-size));
+  background-color: var(--color-blue-10);
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.experience .exp_details .exp .rolesres_title {
+  margin-top: 0.5rem;
+}
+
+.experience .exp_details .exp .degree_highlights {
+  list-style: circle;
+}
+
+.experience .exp_details .exp .degree_highlights li {
+  margin-left: 1.1rem;
+}
+
+
+
+/*--------------- Skills page Styles goes from here --------------- */
+
+.skills h1 {
+  line-height: 2.75rem;
+  padding-block: 1rem;
+}
+
+.skills .skill-section {
+  padding-block: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-block: 1.5rem;
-  gap: 2rem;
-
-}
-
-
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
-
-
-  h1 {
-    font-size: 2.5rem;
-    font-family: "Shadows Into Light", cursive;
-  }
-
-  form {
-    /* background-color: red; */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    .form-field {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-
-      label {
-        font-size: 1rem;
-      }
-
-      input,
-      textarea {
-        padding: 1rem;
-        border: 2px solid var(--font-color);
-        background: none;
-        border-radius: 4px;
-        outline: none;
-        font-size: var(--font-size);
-      }
-
-      textarea {
-        height: 120px;
-      }
-
-      input:focus,
-      textarea:focus {
-        /* border-color: var(--clr-input-focus); */
-        color: var(--clr-text);
-        box-shadow: var(--clr-input-shadow) 0px 7px 29px 0px;
-      }
-    }
-
-    button {
-      background-color: var(--font-color);
-      border: none;
-      color: black;
-      padding: 0.8rem 1.5rem;
-      align-self: center;
-      border-radius: 4px;
-      font-weight: bold;
-      cursor: pointer;
-      font-size: var(--font-size);
-
-      &:hover {
-        background-color: var(--primary-color);
-        color: var(--clr-body-bg);
-      }
-
-    }
-  }
-}
-
-.social_links {
-  /* background-color: red; */
-  margin-block: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 1rem;
 }
 
-.social_links p {
-  color: var(--font-color);
-  opacity: 0.7;
-}
-
-.social_links_objects {
+.skills .skill-section .technical {
+  background-color: var(--color-blue-10);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: flex;
-  justify-content: center;
-  gap: 1.4rem;
-
+  flex-direction: column;
+  gap: 0.2rem;
 }
 
-.social_links_objects a {
-  color: var(--font-color);
-  font-size: 1.85rem;
+.skills .skill-section .technical .skill_pills {
+  margin-block: 0.5rem;
+  list-style: none;
+  gap: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills .skill-section .technical .skill_pills li {
+  font-size: calc(0.8 * var(--font-size));
+  background-color: var(--color-blue-10);
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.skills .skill-section .technical .skills-list {
+  padding-inline: 1rem;
+}
+
+
+
+/*--------------- Qualifications page Styles goes from here --------------- */
+
+.education h1 {
+  line-height: 2.75rem;
+  padding-block: 1rem;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 0.5rem;
+}
+
+.education .edu_details {
+  padding-block: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.education .edu_details .edu {
+  background-color: var(--color-blue-10);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.education .edu_details .edu .duration {
+  opacity: 0.5;
+  font-size: calc(0.9 * var(--font-size));
+}
+
+.education .edu_details .edu ul {
+  list-style: none;
+  font-style: italic;
 }

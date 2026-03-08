@@ -1,0 +1,45 @@
+:root {
+    --font-size: 16px;
+    --font-family: "Poppins", serif;
+    --color-white: #f8f8f8;
+    --color-black: rgb(44, 44, 44);
+    --primary-color: rgb(216, 216, 3);
+    --color-blue-100: rgba(84, 84, 222, 1);
+    --color-blue-75: rgba(84, 84, 222, 0.75);
+    --color-blue-50: rgba(84, 84, 222, 0.5);
+    --color-blue-25: rgba(84, 84, 222, 0.25);
+    --color-blue-10: rgba(84, 84, 222, 0.10);
+    --color-blue-05: rgba(84, 84, 222, 0.05);
+    --color-green: rgb(19, 166, 19);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+a:visited {
+    color: initial;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: var(--color-white);
+    outline: none;
+    -moz-outline-style: none;
+}
+
+button:focus,
+a:focus {
+    outline: none;
+}
+
+button {
+    background: none;
+    border: none;
+    color: inherit;
+}
